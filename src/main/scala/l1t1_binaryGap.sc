@@ -1,3 +1,5 @@
+// https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+
 def solution(n: Int) = {
   """(?=(1(0+)1))""".r
     .findAllMatchIn(n.toBinaryString)

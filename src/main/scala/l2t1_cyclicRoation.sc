@@ -1,3 +1,5 @@
+// https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
+
 def solution(a: Array[Int], k: Int): Array[Int] = {
   if (a.isEmpty || a.length == 1) a
   else {

@@ -1,3 +1,5 @@
+// https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
+
 def solution(a: Array[Int]): Int = {
   var leftSum = 0
   var rightSum = a.sum
