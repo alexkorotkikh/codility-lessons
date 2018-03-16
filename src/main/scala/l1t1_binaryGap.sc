@@ -11,3 +11,5 @@ def solution(n: Int) = {
 assert(solution(123123) == 5)
 assert(solution(328) == 2)
 assert(solution(15) == 0)
+
+// result: https://app.codility.com/demo/results/trainingTD8U5P-2NR/

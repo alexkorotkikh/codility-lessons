@@ -23,3 +23,5 @@ def solution(n: Int, a: Array[Int]): Array[Int] = {
 }
 
 assert(solution(5, Array(3, 4, 4, 6, 1, 4, 4)) sameElements Array(3, 2, 2, 4, 2))
+
+// result: https://app.codility.com/demo/results/trainingTGTQS7-CUW/

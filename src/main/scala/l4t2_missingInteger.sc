@@ -24,3 +24,4 @@ assert(solution(Array(2)) == 1)
 assert(solution(Array(1)) == 2)
 assert(solution(Array(-1000000, 1000000)) == 1)
 
+// result: https://app.codility.com/demo/results/training6JVB72-DWA/

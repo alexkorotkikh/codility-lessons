@@ -11,3 +11,5 @@ def solution(a: Array[Int]): Int = {
 assert(solution(Array(1, 2, 5, 4)) == 3)
 assert(solution(Array(1, 3, 5, 4)) == 2)
 assert(solution(Array(1, 3)) == 2)
+
+// result: https://app.codility.com/demo/results/trainingBSBCEP-3H2/

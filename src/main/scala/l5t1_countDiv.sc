@@ -11,3 +11,5 @@ assert(solution(6, 11, 2) == 3)
 assert(solution(6, 11, 7) == 1)
 assert(solution(6, 11, 12) == 0)
 assert(solution(6, 6, 6) == 1)
+
+// result: https://app.codility.com/demo/results/training2NAPW8-EGS/

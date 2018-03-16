@@ -23,6 +23,7 @@ assert(solution(5, Array(1, 3, 1, 4, 3, 5, 4)) == -1)
 assert(solution(5, Array(1, 3, 1, 4, 3, 5, 2, 4)) == 6)
 assert(solution(1, Array(1)) == 0)
 
+// result: https://app.codility.com/demo/results/trainingNUJKGC-ZYB/
 
 
 

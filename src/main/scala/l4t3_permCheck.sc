@@ -21,3 +21,5 @@ assert(solution(Array(3, 1, 4)) == 0)
 assert(solution(Array(1)) == 1)
 assert(solution(Array(2)) == 0)
 assert(solution(Array(1, 4, 1)) == 0)
+
+// result: https://app.codility.com/demo/results/trainingN7N437-RSZ/

@@ -13,3 +13,5 @@ assert(solution(Array(3, 8, 9, 7, 6), 3) sameElements Array(9, 7, 6, 3, 8))
 assert(solution(Array(3, 8, 9, 7, 6), 8) sameElements Array(9, 7, 6, 3, 8))
 assert(solution(Array(1, 2, 3, 4), 4) sameElements Array(1, 2, 3, 4))
 assert(solution(Array(0, 0, 0), 1) sameElements Array(0, 0, 0))
+
+// result: https://app.codility.com/demo/results/trainingCNX8YY-F8C/
