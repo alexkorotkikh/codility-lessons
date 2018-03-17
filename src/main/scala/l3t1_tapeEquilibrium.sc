@@ -19,3 +19,5 @@ def solution(a: Array[Int]): Int = {
 assert(solution(Array(3, 1, 2, 4, 3)) == 1)
 assert(solution(Array(3, 1, 3, 4, 3)) == 0)
 assert(solution(Array(-1000, 1000)) == 2000)
+
+// result: https://app.codility.com/demo/results/trainingHCXD7F-7VF/
