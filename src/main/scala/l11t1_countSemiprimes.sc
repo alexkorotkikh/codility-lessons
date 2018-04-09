@@ -3,6 +3,7 @@
 def solution(n: Int, p: Array[Int], q: Array[Int]): Array[Int] = {
   def makeSieve(n: Int) = {
     val sieve = Array(false, false) ++ Array.fill(n - 1)(true)
+    val primes = Array[Int]()
     (2 to math.sqrt(n).ceil.toInt).foreach { i =>
       if (sieve(i)) {
         (i * i to n by i).foreach(sieve(_) = false)
@@ -11,11 +12,11 @@ def solution(n: Int, p: Array[Int], q: Array[Int]): Array[Int] = {
     sieve
   }
 
-  def findSemiprimes(sieve: Array[Boolean]) = {
+  def findSemiprimes(sieve: Array[Boolean], primes: Seq[Int]) = {
     val semiprimes = Array.fill(sieve.length)(false)
-    sieve.indices.foreach { i =>
-      (i until sieve.length).foreach { k =>
-        if (sieve(i) && sieve(k) && i.toLong * k.toLong < sieve.length) semiprimes(i * k) = true
+    primes.indices.foreach { i =>
+      (i until primes.length).foreach { k =>
+        if (primes(i).toLong * primes(k) < sieve.length) semiprimes(primes(i) * primes(k)) = true
       }
     }
     semiprimes
@@ -30,7 +31,8 @@ def solution(n: Int, p: Array[Int], q: Array[Int]): Array[Int] = {
   }
 
   val sieve = makeSieve(n)
-  val semiprimes = findSemiprimes(sieve)
+  val primes = sieve.indices.filter(sieve)
+  val semiprimes = findSemiprimes(sieve, primes)
   val semiprimesCount = countSemiprimes(semiprimes)
 
   p.indices.map(i => semiprimesCount(q(i)) - semiprimesCount(p(i) - 1)).toArray
@@ -41,5 +43,4 @@ assert(solution(26, Array(1), Array(26)) sameElements Array(10))
 assert(solution(26, Array(16), Array(20)) sameElements Array(0))
 assert(solution(26, Array(1, 4, 16), Array(26, 10, 20)) sameElements Array(10, 4, 0))
 
-// result: https://app.codility.com/demo/results/training27SVXF-Z4Q/
-// todo: improve performance to 100/100
+// result: https://app.codility.com/demo/results/training7RQ2KQ-PJ6/
