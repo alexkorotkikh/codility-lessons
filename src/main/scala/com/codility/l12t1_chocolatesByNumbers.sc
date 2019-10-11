@@ -1,6 +1,7 @@
 // https://app.codility.com/programmers/lessons/12-euclidean_algorithm/chocolates_by_numbers/
 
 def solution(n: Int, m: Int): Int = {
+  @scala.annotation.tailrec
   def gcd(a: Int, b: Int): Int =
     if (a % b == 0) b
     else gcd(b, a % b)
