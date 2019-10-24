@@ -1,4 +1,4 @@
-object Solution2 {
+object ReverseInteger {
   def reverse(x: Int): Int = {
     val str = x.toString
     try {
@@ -8,4 +8,4 @@ object Solution2 {
   }
 }
 
-assert(Solution2.reverse(1534236469) == 0)
+assert(ReverseInteger.reverse(1534236469) == 0)

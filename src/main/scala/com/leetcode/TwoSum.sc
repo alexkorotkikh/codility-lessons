@@ -1,4 +1,4 @@
-object Solution {
+object TwoSum {
   def twoSum(nums: Array[Int], target: Int): Array[Int] = {
     @annotation.tailrec
     def _twoSum(i: Int, map: Map[Int, Int]): Array[Int] = {
@@ -11,4 +11,4 @@ object Solution {
   }
 }
 
-assert(Solution.twoSum(Array(2, 7, 11, 15), 9) sameElements Array(0, 1))
+assert(TwoSum.twoSum(Array(2, 7, 11, 15), 9) sameElements Array(0, 1))

@@ -3,7 +3,7 @@ class ListNode(var _x: Int = 0) {
   var x: Int = _x
 }
 
-object Solution3 {
+object AddTwoNumbers {
   def addTwoNumbers(l1: ListNode, l2: ListNode): ListNode = {
     def add(p: ListNode, q: ListNode, carry: Int): ListNode = {
       val sum = (if (p == null) 0 else p.x) + (if (q == null) 0 else q.x) + carry

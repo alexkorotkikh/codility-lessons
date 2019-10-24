@@ -1,4 +1,4 @@
-object Solution4 {
+object LetterCombinations {
   val map = Map(
     '2' -> "abc",
     '3' -> "def",
@@ -27,4 +27,4 @@ object Solution4 {
 }
 
 
-assert(Solution4.letterCombinations("23") sameElements Array("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"))
+assert(LetterCombinations.letterCombinations("23") sameElements Array("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"))
