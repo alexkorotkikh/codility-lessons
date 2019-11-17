@@ -1,5 +1,3 @@
-import scala.collection.mutable
-
 object ValidParentheses {
   def isValid(s: String): Boolean = {
     @annotation.tailrec
